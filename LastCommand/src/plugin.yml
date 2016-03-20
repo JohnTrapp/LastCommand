@@ -1,0 +1,27 @@
+name: LastCommand
+main: com.johneyt54.lastcommand.LastCommand
+version: 1.0
+author: johneyt54
+
+commands:
+    test:
+        description: A test of LastCommand
+    CommandWarp:
+        description: Warp to player's last command
+        aliases: [lcwarp, cw]
+        permission: lastcommand.commandWarp
+        usage: /commandWarp [Player]
+    ViewLast:
+        description: View a players last command
+        aliases: [vl, lc]
+        permission: lastcommand.viewlast
+        usage: /viewLast [Player]
+        
+permissions:
+    lastcommand.*:
+        description: Gives access to all LastCommand commands
+    lastcommand.commandWarp:
+        description: Allows you to warp to a players last command location
+    lastcommand.viewlast:
+        description: Allows you to view a players last command
+        
